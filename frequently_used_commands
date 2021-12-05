@@ -1,0 +1,5 @@
+gc -m "Updated Sections About me" - Make a commit to main branch
+gp - Push the change to main branch
+mkdocs gh-deploy - Make deployment to gh_pages branch; this should fail w/ a warning
+git pull origin gh-pages:gh-pages - pull the changes; if you do this before the deploy, it will give error, which tells about failing to merge unrelated histories
+mkdocs gh-deploy - this time deploy is a success

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>HiPlot - Better Parallel Co-ordinates - unalivepool.github.io</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "HiPlot - Better Parallel Co-ordinates";
+    var mkdocs_page_input_path = "Active Threads/Tools and Workflows/HiPlot.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> unalivepool.github.io</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../FAQ%20and%20About%20Me/">FAQ and About Me!</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Active Threads</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../../Publish%20Workflow/">Publishing Workflow</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Tools and Workflows</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">HiPlot - Better Parallel Co-ordinates</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#key-benefits">Key benefits</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#first-look-at-the-data-in-a-jupyter-notebook">First look at the data in a jupyter notebook</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#stating-the-obvious">Stating the obvious</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#stating-the-not-so-obvious">Stating the Not so obvious</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#free-stuff">Free Stuff</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#outlier-detectionmulti-dimensional-yes">Outlier Detection(Multi-dimensional, yes!)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#helping-us-ask-the-questions">Helping us ask the questions</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#multi-variate-relationships">Multi-Variate Relationships</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#additional-features">Additional Features</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#limitations-and-things-to-note">Limitations and Things to Note</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sources">Sources</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Optimisation</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../optimisation/Discrete%20Optimisation/">Discrete Optimisation</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Next in plan</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../Next%20in%20plan/Customer%20Lifecycle%20and%20Segmentation/">Customer Lifecycle and Segmentation</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">unalivepool.github.io</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Active Threads &raquo;</li>
+        
+      
+        
+          <li>Tools and Workflows &raquo;</li>
+        
+      
+    
+    <li>HiPlot - Better Parallel Co-ordinates</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="hiplot-better-parallel-co-ordinates">HiPlot - Better Parallel Co-ordinates</h1>
+<p><a href="https://pypi.org/project/hiplot/">HiPlot</a> is a <strong>very-light interactive</strong> visualisation tool by <strong>Facebook AI 
+Research</strong> that allows you to view n-dimensional relationships in a 2 D view and was released very recently.  </p>
+<p>While parallel co-ordinates is not a new methodology, and has been around figuratively for more than a century -
+<a href="https://en.wikipedia.org/wiki/Parallel_coordinates">1885</a>, the Key Benefits IMO are listed as below.</p>
+<h2 id="key-benefits">Key benefits</h2>
+<ul>
+<li>
+<p><strong>Interactivity</strong> - highly customisable and fast</p>
+<ul>
+<li>
+<p>Zoom in or Zoom out on the dataset - by selecting a particular set of points to <strong>Keep</strong> and to <strong>Exclude</strong>
+  respectively.</p>
+</li>
+<li>
+<p>Able to visually transform scales to log-scale and percentile scales</p>
+</li>
+<li>Select color axis</li>
+<li>Re-order columns in column axis (should help in discovery of relationships/corr. b/w variables)</li>
+<li>Scale - Able to handle interactivity w/ around <strong>half a million data points w/o getting sluggish</strong></li>
+<li><strong>Looks pretty</strong> and not dull!!! /\</li>
+</ul>
+</li>
+</ul>
+<p>In summary, <strong>discovering the story</strong> (assuming you have all the characters) or <strong>EDA</strong> became a lot easier</p>
+<p>Let us build a narrative together and explore the <a href="https://www.rdocumentation.
+org/packages/datasets/versions/3.6.2/topics/ChickWeight">chicken weight dataset</a> to just see what all can we do.</p>
+<p>The installation instructions are pretty standard and covered here. A quick command is as below  </p>
+<pre><code class="language-shell">pip install -U hiplot  # Or for conda users: conda install -c conda-forge hiplot
+</code></pre>
+<h2 id="first-look-at-the-data-in-a-jupyter-notebook">First look at the data in a jupyter notebook</h2>
+<pre><code class="language-python">chicks = pd.read_csv('chickweight.csv')  # get the chicks :D
+import hiplot as hip
+
+data = chicks.to_dict(orient='records')  # this transforms the chicks into a data dictionary..
+hip.Experiment.from_iterable(data).display()  #
+</code></pre>
+<p><img alt="img.png" src="../../img.png" /></p>
+<h3 id="stating-the-obvious">Stating the obvious</h3>
+<ul>
+<li><strong>About the dataset</strong>: dataset that has weight measures of chicks for 21 days after they are born given a specific
+  diet</li>
+<li>The columns of the <strong>data_frame</strong> are the vertical axes, and given that these axes representing co-ordinates are
+  parallel to each other, ergo, <strong>parallel co-ordinates</strong>.</li>
+<li>We'll just re-arrange the dataset so that we understand this a tad bit better and know what, how and where to look for</li>
+<li>We move the <code>Chick</code> column as the first column (this is <strong>chick_id</strong>), followed by <code>Diet</code> , as this is a different
+  feed to the chickens, and our <strong>target variable</strong> is the <code>weight</code> of the chicks, which comes to the last, which leaves
+  the <code>time</code>  columns as the third one. This gives us the following ordering.
+  <img alt="img_1.png" src="../../img_1.png" /></li>
+</ul>
+<h3 id="stating-the-not-so-obvious">Stating the Not so obvious</h3>
+<ul>
+<li>The first <strong>numerical</strong> column in the dataset is used for <strong>coloring</strong>. For our case, it was <code>weight</code>, which is also
+  our target variable, so we don't really need to explicitly set it.</li>
+<li>This parallel co-ordinates view would have automatically handled <strong>categorical</strong> variable of <code>Diet</code>. You can easily
+  mark a variable categorical if need be(just right-click on the column text at top).</li>
+</ul>
+<h2 id="free-stuff">Free Stuff</h2>
+<h3 id="outlier-detectionmulti-dimensional-yes">Outlier Detection(Multi-dimensional, yes!)</h3>
+<ul>
+<li>At a glance, one can see that the extreme weights of chicks are in the <strong>range &gt;300</strong>.</li>
+<li>Selecting records will highlight the row and associated values of different columns.
+  <img alt="img_3.png" src="../../8.gif" /></li>
+<li>An added advantage is, you could see the multi-dimensional outliers in a glance here.</li>
+<li>You can <strong>exclude</strong> them, by just clicking on the <strong>Exclude</strong> button and the plot would <strong>re-scale</strong> if needed</li>
+</ul>
+<h3 id="helping-us-ask-the-questions">Helping us ask the questions</h3>
+<ul>
+<li>It does not take a very fine eye to note the following for the last 2 variables - <code>Time</code> and <code>Weight</code><ul>
+<li>The <strong>weight</strong> of the chickens do seem to <strong>increase w/ time</strong> (given the lines look parallel to each other w.r.t
+  time) and the change in color</li>
+<li>We also observe there is an <strong>increase in variance</strong> as the time increases. We could confirm this by looking at
+  time vs weight plot. Guess what, you can do it right here!!
+  <img alt="img_4.png" src="../../10.gif" /></li>
+</ul>
+</li>
+</ul>
+<h3 id="multi-variate-relationships">Multi-Variate Relationships</h3>
+<ul>
+<li>A very powerful thing that we can do is, we can select a window of one or more column and observe the association w/
+  target variable.</li>
+<li>Here, we obviously ask, for a set of 2 different diets say <strong>Diet 2</strong>, and <strong>Diet 3</strong>, <strong>how does the weight of
+  chickens change with respect to time window of days?</strong>.<ul>
+<li>Here, we first <strong>color by Diet</strong> variable to get a sense of differentiation b/w two diets.</li>
+<li>Select the <code>Diet</code> we wish to compare, and simply, select the rolling timeframe</li>
+<li>We move the <strong>weight axes now in the center</strong>, to observe the growth of chicken w/ time.</li>
+<li>The following view, then allows us to think in the direction that <strong>Diet 3</strong> fosters more growth than <strong>Diet 2</strong>
+  <img alt="img_3.png" src="../../12.gif" /></li>
+</ul>
+</li>
+</ul>
+<h2 id="additional-features">Additional Features</h2>
+<ul>
+<li><strong>Export as interactive html</strong>: One can easily export this as a standalone html to explore the dataset using just the
+  csv. You can even share the html offline. The command for the same is</li>
+</ul>
+<pre><code class="language-shell">hiplot-render chickweight.csv &gt; chickweight.html
+</code></pre>
+<ul>
+<li><strong>DataFrame Access</strong>: It's easy to get lost in plots and charts, and a lot of us tend to stick to tables. There is
+  <strong>searchable dataframe</strong> right below the plot to enable access the entire dataframe content right at the bottom.</li>
+<li><strong>Variable Transformation</strong> :Hi-Plot visual allows us to do few very useful transformations on the fly, including b/w
+  types(categorical, numerical, timestamp) and Scale - (Log, Percentiles)</li>
+</ul>
+<h2 id="limitations-and-things-to-note">Limitations and Things to Note</h2>
+<ul>
+<li>If you took a note above(Multi-variate - relationships), we did <strong>center</strong> the weight axis and had the <strong>Time</strong> and
+  <strong>Diet</strong> around it. This was for the purpose that it is easier to identify relationships b/w adjoining columns, and it
+  gets difficult as we move away from the columns.</li>
+<li>This view will definitely help us to get started w/ discovering the story, but might not necessarily help us have an
+  exhaustive view. A good example of that is that we did miss the fact that some chickens in the above dataset <strong>
+  prematurely died</strong></li>
+<li>Another thing to note, that discovering the order in which to view data might need a few iterations and might not be
+  very obvious for a dataset having a lot of features. Do give a read to <a href="https://en.wikipedia.org/wiki/Parallel_coordinates">wiki</a> for better usage from the parallel 
+  coordinates view.</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://pypi.org/project/hiplot/">HiPlot</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Parallel_coordinates">Parallel Co-ordinates Wiki</a></li>
+<li><a href="https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/ChickWeight">Chicken Dataset</a></li>
+<li><a href="https://calmcode.io/datasets/chickweight.html">Chicken Dataset for Python</a></li>
+<li>(Warmerdam (2021, Sept. 2). koaning.io: Bad Labels. Retrieved from https://koaning. io/posts/labels/)</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../optimisation/Discrete%20Optimisation/" class="btn btn-neutral float-right" title="Discrete Optimisation">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../Publish%20Workflow/" class="btn btn-neutral" title="Publishing Workflow"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../Publish%20Workflow/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../optimisation/Discrete%20Optimisation/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
