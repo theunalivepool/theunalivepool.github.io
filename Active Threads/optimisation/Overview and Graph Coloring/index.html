@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Overview and Graph Coloring - theunalivepool.github.io</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Overview and Graph Coloring";
+    var mkdocs_page_input_path = "Active Threads/optimisation/Overview and Graph Coloring.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> theunalivepool.github.io</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../FAQ%20and%20About%20Me/">FAQ and About Me!</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Active Threads</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../../Publish%20Workflow/">Publishing Workflow</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Tools and Workflows</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Tools%20and%20Workflows/HiPlot/">HiPlot - Better Parallel Co-ordinates</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Tools%20and%20Workflows/Unknowns/">Unknowns or Asked questions?</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Optimisation</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../Discrete%20Optimisation/">Discrete Optimisation</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Overview and Graph Coloring</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#glossary">Glossary</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#hints">Hints:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#other-notes">Other Notes</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#q-what-is-an-optimization-problem">Q: What is an optimization problem?</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#q-types-of-optimisation-problems">Q: Types of Optimisation problems</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Next in plan</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../Next%20in%20plan/Customer%20Lifecycle%20and%20Segmentation/">Customer Lifecycle and Segmentation</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">theunalivepool.github.io</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Active Threads &raquo;</li>
+        
+      
+        
+          <li>Optimisation &raquo;</li>
+        
+      
+    
+    <li>Overview and Graph Coloring</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="overview-and-graph-coloring">Overview and Graph Coloring</h1>
+<h2 id="glossary">Glossary</h2>
+<ul>
+<li>Graph Density = # of edges in graph/ # of possible edges in a graph</li>
+<li>Max # of possible edges in graph = V*(V-1)/2 for an undirected graph where V - # of vertices</li>
+</ul>
+<h2 id="hints">Hints:</h2>
+<ul>
+<li>For the graph coloring problem:<ul>
+<li>the higher the degree of node, higher the node is constrained. This information should be useful when solving the
+  problem</li>
+</ul>
+</li>
+</ul>
+<h2 id="other-notes">Other Notes</h2>
+<h4 id="q-what-is-an-optimization-problem">Q: What is an optimization problem?</h4>
+<p>The goal of optimization is to find the best solution to a problem out of a large set of possible solutions.
+(Sometimes you'll be satisfied with finding any feasible solution; OR-Tools can do that as well.)</p>
+<p>Optimization problems have the following elements:</p>
+<p>The <strong>objective</strong>—the quantity you want to optimize. To set up an optimization problem, you need to define a function
+that calculates the value of the objective for any possible solution. This is called the objective function.</p>
+<p>An optimal solution is one for which the value of the objective function is the best. ("Best" can be either a maximum or
+a minimum.)</p>
+<p><strong>constraints</strong>—restrictions on the set of possible solutions, based on the specific requirements of the problem.</p>
+<p>A feasible solution is one that satisfies all the given constraints for the problem, without necessarily being optimal.
+The first step in solving an optimization problem is identifying the objective and constraints.</p>
+<h4 id="q-types-of-optimisation-problems">Q: Types of Optimisation problems</h4>
+<ul>
+<li><strong>Linear optimization</strong>:  linear optimization problem is one in which the objective function and the constraints are
+  linear expressions in the variables</li>
+<li><strong>Constraint optimization</strong>: Constraint optimization, or constraint programming (CP), <strong>identifies feasible
+  solutions</strong> out of a very large set of candidates, where the <strong>problem</strong> <strong>can be modeled in terms of arbitrary
+  constraints</strong>. CP is <strong>based on feasibility</strong> (finding a feasible solution) rather than optimization (finding an
+  optimal solution) and <strong>focuses on the constraints and variables rather than the objective function</strong>. However, CP can
+  be used to solve optimization problems, simply by comparing the values of the objective function for all feasible
+  solutions.</li>
+<li><strong>Mixed-integer optimization</strong>: A mixed integer optimization problem is one in which some or all of the variables are
+  required to be integers. An example would be : the variable can take only 0 or 1 value in the context of an
+  <strong>assigment</strong> problem, in which a group of workers needs be assigned to a set of tasks</li>
+<li><strong>Bin packing</strong>: Bin packing is the problem of <strong>packing a set of objects of different sizes into containers with
+  different capacities</strong>. The goal is to pack as many of the objects as possible, subject to the capacities of the
+  containers. A special case of this is the knapsack problem, in which there is just one container.</li>
+<li><strong>Network flows</strong>: Many optimization problems can be represented by a <strong>directed graph consisting of nodes and
+  directed arcs between them</strong>. For example, transportation problems, in which goods are shipped across a railway
+  network, can be represented by a graph in which the arcs are rail lines and the nodes are distribution centers. In the
+  maximum flow problem, each arc has a maximum capacity that can be transported across it. The problem is to assign the
+  amount of goods to be shipped across each arc so that the total quantity being transported is as large as possible.</li>
+<li><strong>Assignment</strong>: Assignment problems involve assigning a group of agents (say, workers or machines) to a set of tasks,
+  where there is a fixed cost for assigning each agent to a specific task. The problem is to find the assignment with
+  the least total cost. Assignment problems are actually a special case of network flow problems.</li>
+<li><strong>Scheduling</strong>: Scheduling problems involve assigning resources to perform a set of tasks at specific times. An
+  important example is the job shop problem, in which multiple jobs are processed on several machines. Each job consists
+  of a sequence of tasks, which must be performed in a given order, and each task must be processed on a specific
+  machine. The problem is to assign a schedule so that all jobs are completed in as short an interval of time as
+  possible.</li>
+<li><strong>Routing</strong>: Routing problems involve finding the optimal routes for a fleet of vehicles to traverse a network,
+  defined by a directed graph. </li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../../Next%20in%20plan/Customer%20Lifecycle%20and%20Segmentation/" class="btn btn-neutral float-right" title="Customer Lifecycle and Segmentation">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Discrete%20Optimisation/" class="btn btn-neutral" title="Discrete Optimisation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Discrete%20Optimisation/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../../Next%20in%20plan/Customer%20Lifecycle%20and%20Segmentation/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
